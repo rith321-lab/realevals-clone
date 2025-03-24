@@ -112,9 +112,6 @@ export default function Home() {
           <p className="text-gray-500 text-sm md:text-base mb-8 max-w-3xl mx-auto">
             Modern, complex websites mirroring what we actually use the web for
           </p>
-          <button className="bg-indigo-600 text-white px-6 py-2 rounded-md hover:bg-indigo-700 transition-colors">
-            Join The Leaderboard
-          </button>
         </div>
 
         <h2 className="text-2xl md:text-3xl font-bold text-[#2f2e47] mt-8 mb-6">

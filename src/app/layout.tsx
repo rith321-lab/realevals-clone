@@ -18,11 +18,29 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <header className="w-full bg-white py-4 shadow-sm">
-          <div className="container mx-auto px-4">
-            <Link href="/" className="text-2xl font-bold text-center text-[#2f2e47] block">
-              REAL
-            </Link>
+        <header className="w-full bg-white py-5">
+          <div className="container mx-auto px-4 md:px-6 flex items-center">
+            <div className="flex items-center space-x-12">
+              <Link href="/" className="text-2xl font-semibold text-[#2f2e47]">
+                REAL
+              </Link>
+              <nav className="flex items-center space-x-8">
+                <Link href="/about" className="text-base text-[#2f2e47] hover:text-gray-600">
+                  About
+                </Link>
+                <Link href="/metrics" className="text-base text-[#2f2e47] hover:text-gray-600">
+                  Metrics
+                </Link>
+              </nav>
+            </div>
+            <div className="ml-auto">
+              <Link 
+                href="/demo"
+                className="bg-[#000000] text-white px-6 py-3 rounded-lg text-sm font-medium hover:bg-[#1a1a1a] transition-colors"
+              >
+                Book a Demo
+              </Link>
+            </div>
           </div>
         </header>
         {children}
