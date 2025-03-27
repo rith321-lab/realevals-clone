@@ -6,15 +6,11 @@ import Link from "next/link";
 const inter = Inter({ subsets: ["latin"], weight: ["400", "500", "600", "700"] });
 
 export const metadata: Metadata = {
-  title: 'Verita AI',
-  description: 'Realistic Evaluations for Agents Leaderboard',
+  title: "Verita AI",
+  description: "Realistic Evaluations for Agents Leaderboard",
 };
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode
-}) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" suppressHydrationWarning={true}>
       <body className={inter.className}>
@@ -35,9 +31,7 @@ export default function RootLayout({
                 </nav>
               </div>
               <div>
-                <button className="bg-[#7c4dff] text-white px-3 sm:px-6 py-2 sm:py-3 rounded-lg text-xs sm:text-sm font-medium hover:bg-[#6c3ce9] transition-colors">
-                  Participate
-                </button>
+                <button className="bg-[#7c4dff] text-white px-3 sm:px-6 py-2 sm:py-3 rounded-lg text-xs sm:text-sm font-medium hover:bg-[#6c3ce9] transition-colors">Participate</button>
               </div>
             </div>
           </div>
