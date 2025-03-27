@@ -382,14 +382,11 @@ export default function Metrics() {
                 hover:bg-[#6c3ce9]
                 transition-colors
                 cursor-pointer
-                appearance-none
 
+                appearance-none
                 bg-[url('data:image/svg+xml,%3Csvg%20fill%3D%22white%22%20viewBox%3D%220%200%2020%2020%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%3E%3Cpath%20fill-rule%3D%22evenodd%22%20d%3D%22M5.293%207.293a1%201%200%20011.414%200L10%2010.586l3.293-3.293a1%201%200%20011.414%201.414l-4%204a1%201%200%2001-1.414%200l-4-4a1%201%200%20010-1.414z%22%20clip-rule%3D%22evenodd%22/%3E%3C/svg%3E')]
                 bg-no-repeat
-
-                /* Set the arrow size */
                 bg-[length:1rem_1rem]
-
                 bg-[position:calc(100%-1.25rem)_center]
               "
           >
@@ -518,7 +515,24 @@ export default function Metrics() {
               <select
                 value={selectedWebsite}
                 onChange={e => setSelectedWebsite(e.target.value)}
-                className="bg-[#7c4dff] text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-[#6c3ce9] transition-colors cursor-pointer"
+                className="
+                  bg-[#7c4dff]
+                  text-white
+                  px-4
+                  py-2
+                  pr-8
+                  rounded-lg
+                  text-sm
+                  font-medium
+                  hover:bg-[#6c3ce9]
+                  transition-colors
+                  cursor-pointer
+                  appearance-none
+                  bg-[url('data:image/svg+xml,%3Csvg%20fill%3D%22white%22%20viewBox%3D%220%200%2020%2020%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%3E%3Cpath%20fill-rule%3D%22evenodd%22%20d%3D%22M5.293%207.293a1%201%200%20011.414%200L10%2010.586l3.293-3.293a1%201%200%20011.414%201.414l-4%204a1%201%200%2001-1.414%200l-4-4a1%201%200%20010-1.414z%22%20clip-rule%3D%22evenodd%22/%3E%3C/svg%3E')]
+                  bg-no-repeat
+                  bg-[length:0.8rem_0.8rem]
+                  bg-[position:calc(100%-0.75rem)_center]
+                "
               >
                 {websites.map(site => (
                   <option key={site.name} value={site.name}>
