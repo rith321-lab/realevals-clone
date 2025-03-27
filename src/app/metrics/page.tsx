@@ -105,14 +105,14 @@ export default function Metrics() {
   return (
     <main className="flex min-h-screen flex-col items-center p-4 md:p-8 bg-gray-50">
       <div className="max-w-6xl w-full">
-        <div className="flex items-center justify-between mb-8">
+        <div className="flex justify-between mb-8">
           <h1 className="text-4xl font-bold text-[#2f2e47]">
             Model performance, broken out by website and tasks
           </h1>
           <select
             value={selectedModel}
             onChange={(e) => setSelectedModel(e.target.value)}
-            className="bg-[#7c4dff] text-white px-6 py-3 rounded-lg text-lg font-medium hover:bg-[#6c3ce9] transition-colors cursor-pointer"
+            className="bg-[#7c4dff] text-white px-6 py-3 rounded-lg text-base font-medium hover:bg-[#6c3ce9] transition-colors cursor-pointer "
           >
             {models.map((model) => (
               <option key={model.name} value={model.name}>

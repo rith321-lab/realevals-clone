@@ -6,7 +6,7 @@ import Link from "next/link";
 const inter = Inter({ subsets: ["latin"], weight: ["400", "500", "600", "700"] });
 
 export const metadata: Metadata = {
-  title: 'Vertia AI',
+  title: 'Verita AI',
   description: 'Realistic Evaluations for Agents Leaderboard',
 };
 
@@ -16,14 +16,14 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning={true}>
       <body className={inter.className}>
         <header className="w-full bg-white py-5">
           <div className="container mx-auto px-4 md:px-6">
             <div className="flex items-center justify-between">
               <div className="flex items-center space-x-12">
                 <Link href="/" className="text-2xl font-semibold text-[#2f2e47]">
-                  Vertia AI
+                  Verita AI
                 </Link>
                 <nav className="hidden md:flex items-center space-x-8">
                   <Link href="/metrics" className="text-base text-[#2f2e47] hover:text-gray-600">
