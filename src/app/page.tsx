@@ -203,6 +203,12 @@ export default function Home() {
               </ul>
             </div>
           </div>
+          
+          <div className="mt-10 text-center">
+            <p className="text-[#7c4dff] font-medium text-lg">
+              Used by leading AI labs and browser use agent companies
+            </p>
+          </div>
         </div>
 
         <div className="text-center">
