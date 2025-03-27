@@ -21,11 +21,11 @@ export default function RootLayout({
         <header className="w-full bg-white py-5">
           <div className="container mx-auto px-4 md:px-6">
             <div className="flex items-center justify-between">
-              <div className="flex items-center space-x-12">
+              <div className="flex items-center space-x-2 md:space-x-12">
                 <Link href="/" className="text-2xl font-semibold text-[#2f2e47]">
-                  Verita AI
+                  Vertia AI
                 </Link>
-                <nav className="hidden md:flex items-center space-x-8">
+                <nav className="flex items-center space-x-4 md:space-x-8">
                   <Link href="/metrics" className="text-base text-[#2f2e47] hover:text-gray-600">
                     Metrics
                   </Link>
@@ -35,7 +35,7 @@ export default function RootLayout({
                 </nav>
               </div>
               <div>
-                <button className="bg-[#7c4dff] text-white px-6 py-3 rounded-lg text-sm font-medium hover:bg-[#6c3ce9] transition-colors">
+                <button className="bg-[#7c4dff] text-white px-3 sm:px-6 py-2 sm:py-3 rounded-lg text-xs sm:text-sm font-medium hover:bg-[#6c3ce9] transition-colors">
                   Participate
                 </button>
               </div>

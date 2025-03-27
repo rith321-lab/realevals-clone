@@ -18,9 +18,9 @@ type WebsiteTasks = {
 export default function Metrics() {
   const [selectedWebsite, setSelectedWebsite] = useState("Staynb");
   const [selectedModel, setSelectedModel] = useState("Project Mariner");
-
+  
   const models = [
-    {
+    { 
       name: "Project Mariner",
       score: 55,
       tasksCompleted: { total: 186, easy: 68, medium: 63, hard: 55 },
@@ -596,4 +596,4 @@ export default function Metrics() {
       </div>
     </main>
   );
-}
+} 
