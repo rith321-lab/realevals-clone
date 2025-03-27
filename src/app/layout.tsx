@@ -19,7 +19,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             <div className="flex items-center justify-between">
               <div className="flex items-center space-x-2 md:space-x-12">
                 <Link href="/" className="text-2xl font-semibold text-[#2f2e47]">
-                  Vertia AI
+                  Verita AI
                 </Link>
                 <nav className="flex items-center space-x-4 md:space-x-8">
                   <Link href="/metrics" className="text-base text-[#2f2e47] hover:text-gray-600">
