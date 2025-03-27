@@ -369,7 +369,7 @@ export default function Metrics() {
     <main className="flex min-h-screen flex-col items-center p-4 md:p-8 bg-gray-50">
       <div className="max-w-6xl w-full">
         <div className="flex items-center justify-between mb-8">
-          <h1 className="text-4xl font-bold text-[#2f2e47]">Model performance, broken out by website and tasks</h1>
+          <h1 className="text-3xl font-bold text-[#2f2e47] mr-4">Model performance, broken out by website and tasks</h1>
           <select
             className="
                 bg-[#7c4dff]
